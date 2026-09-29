@@ -1,0 +1,2174 @@
+{
+  "revision": "R01",
+  "date": "2026-09-25",
+  "models": {
+    "A101_GF": {
+      "key": "A101_GF",
+      "title": "Restaurant ground floor",
+      "w": 16,
+      "h": 18,
+      "rooms": [
+        {
+          "name": "S1 stair",
+          "x": 0.0,
+          "y": 0.0,
+          "w": 4.48,
+          "h": 4.7368421052631575,
+          "kind": "core"
+        },
+        {
+          "name": "Welcome / lobby",
+          "x": 4.48,
+          "y": 0.0,
+          "w": 3.2,
+          "h": 4.7368421052631575,
+          "kind": "guest"
+        },
+        {
+          "name": "Lift / lobby",
+          "x": 7.68,
+          "y": 0.0,
+          "w": 3.2,
+          "h": 4.7368421052631575,
+          "kind": "core"
+        },
+        {
+          "name": "Guest WCs",
+          "x": 10.879999999999999,
+          "y": 0.0,
+          "w": 5.12,
+          "h": 4.7368421052631575,
+          "kind": "wet"
+        },
+        {
+          "name": "Indoor dining",
+          "x": 4.266666666666667,
+          "y": 4.7368421052631575,
+          "w": 11.733333333333333,
+          "h": 8.052631578947368,
+          "kind": "guest"
+        },
+        {
+          "name": "Service gallery",
+          "x": 0.0,
+          "y": 4.7368421052631575,
+          "w": 4.266666666666667,
+          "h": 8.052631578947368,
+          "kind": "service"
+        },
+        {
+          "name": "S2 stair",
+          "x": 11.520000000000001,
+          "y": 12.789473684210526,
+          "w": 4.48,
+          "h": 5.2105263157894735,
+          "kind": "core"
+        },
+        {
+          "name": "Kitchen / pass",
+          "x": 5.12,
+          "y": 12.789473684210526,
+          "w": 6.4,
+          "h": 5.2105263157894735,
+          "kind": "service"
+        },
+        {
+          "name": "Stores / wash",
+          "x": 0.0,
+          "y": 12.789473684210526,
+          "w": 5.12,
+          "h": 5.2105263157894735,
+          "kind": "service"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "entries": [
+        [
+          6.08,
+          0.0,
+          "h",
+          1.7066666666666668
+        ],
+        [
+          13.546666666666665,
+          18.0,
+          "h",
+          1.28
+        ],
+        [
+          0.0,
+          15.157894736842104,
+          "v",
+          1.1368421052631579
+        ],
+        [
+          16.0,
+          8.526315789473683,
+          "v",
+          1.5157894736842106
+        ]
+      ],
+      "windows": [
+        [
+          16.0,
+          5.684210526315789,
+          16.0,
+          7.294736842105263
+        ],
+        [
+          16.0,
+          9.473684210526315,
+          16.0,
+          11.368421052631579
+        ],
+        [
+          8.213333333333333,
+          0.0,
+          9.813333333333333,
+          0.0
+        ]
+      ]
+    },
+    "A101_FF": {
+      "key": "A101_FF",
+      "title": "Restaurant first floor",
+      "w": 16,
+      "h": 18,
+      "rooms": [
+        {
+          "name": "S1 stair",
+          "x": 0.0,
+          "y": 0.0,
+          "w": 4.48,
+          "h": 4.7368421052631575,
+          "kind": "core"
+        },
+        {
+          "name": "Arrival lounge",
+          "x": 4.48,
+          "y": 0.0,
+          "w": 3.2,
+          "h": 4.7368421052631575,
+          "kind": "guest"
+        },
+        {
+          "name": "Lift / lobby",
+          "x": 7.68,
+          "y": 0.0,
+          "w": 3.2,
+          "h": 4.7368421052631575,
+          "kind": "core"
+        },
+        {
+          "name": "Guest WCs",
+          "x": 10.879999999999999,
+          "y": 0.0,
+          "w": 5.12,
+          "h": 4.7368421052631575,
+          "kind": "wet"
+        },
+        {
+          "name": "Dining / lounge",
+          "x": 4.266666666666667,
+          "y": 4.7368421052631575,
+          "w": 11.733333333333333,
+          "h": 8.052631578947368,
+          "kind": "guest"
+        },
+        {
+          "name": "Guest gallery",
+          "x": 0.0,
+          "y": 4.7368421052631575,
+          "w": 4.266666666666667,
+          "h": 8.052631578947368,
+          "kind": "guest"
+        },
+        {
+          "name": "S2 stair",
+          "x": 11.520000000000001,
+          "y": 12.789473684210526,
+          "w": 4.48,
+          "h": 5.2105263157894735,
+          "kind": "core"
+        },
+        {
+          "name": "Private dining",
+          "x": 5.12,
+          "y": 12.789473684210526,
+          "w": 6.4,
+          "h": 5.2105263157894735,
+          "kind": "guest"
+        },
+        {
+          "name": "Pantry / service",
+          "x": 0.0,
+          "y": 12.789473684210526,
+          "w": 5.12,
+          "h": 5.2105263157894735,
+          "kind": "service"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "entries": [],
+      "windows": [
+        [
+          16.0,
+          5.684210526315789,
+          16.0,
+          11.368421052631579
+        ],
+        [
+          5.866666666666666,
+          18.0,
+          10.133333333333333,
+          18.0
+        ]
+      ]
+    },
+    "A102_RF": {
+      "key": "A102_RF",
+      "title": "Restaurant rooftop",
+      "w": 16,
+      "h": 18,
+      "rooms": [
+        {
+          "name": "S1 stair",
+          "x": 0.0,
+          "y": 0.0,
+          "w": 4.48,
+          "h": 4.7368421052631575,
+          "kind": "core"
+        },
+        {
+          "name": "Roof foyer",
+          "x": 4.48,
+          "y": 0.0,
+          "w": 3.2,
+          "h": 4.7368421052631575,
+          "kind": "guest"
+        },
+        {
+          "name": "Lift / lobby",
+          "x": 7.68,
+          "y": 0.0,
+          "w": 3.2,
+          "h": 4.7368421052631575,
+          "kind": "core"
+        },
+        {
+          "name": "Guest WCs",
+          "x": 10.879999999999999,
+          "y": 0.0,
+          "w": 5.12,
+          "h": 4.7368421052631575,
+          "kind": "wet"
+        },
+        {
+          "name": "Open dining terrace",
+          "x": 4.266666666666667,
+          "y": 4.7368421052631575,
+          "w": 11.733333333333333,
+          "h": 8.052631578947368,
+          "kind": "outdoor"
+        },
+        {
+          "name": "Open circulation",
+          "x": 0.0,
+          "y": 4.7368421052631575,
+          "w": 4.266666666666667,
+          "h": 8.052631578947368,
+          "kind": "outdoor"
+        },
+        {
+          "name": "S2 stair",
+          "x": 11.520000000000001,
+          "y": 12.789473684210526,
+          "w": 4.48,
+          "h": 5.2105263157894735,
+          "kind": "core"
+        },
+        {
+          "name": "Shade pergola zone",
+          "x": 5.12,
+          "y": 12.789473684210526,
+          "w": 6.4,
+          "h": 5.2105263157894735,
+          "kind": "outdoor"
+        },
+        {
+          "name": "Plant / servery reserve",
+          "x": 0.0,
+          "y": 12.789473684210526,
+          "w": 5.12,
+          "h": 5.2105263157894735,
+          "kind": "service"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "entries": [],
+      "windows": []
+    },
+    "A201_GF": {
+      "key": "A201_GF",
+      "title": "Cowork and retail ground floor",
+      "w": 10,
+      "h": 18.5,
+      "rooms": [
+        {
+          "name": "S1 stair",
+          "x": 0,
+          "y": 0,
+          "w": 4,
+          "h": 5,
+          "kind": "core"
+        },
+        {
+          "name": "Lift / lobby",
+          "x": 4,
+          "y": 0,
+          "w": 3,
+          "h": 5,
+          "kind": "core"
+        },
+        {
+          "name": "Guest WCs",
+          "x": 7,
+          "y": 0,
+          "w": 3,
+          "h": 5,
+          "kind": "wet"
+        },
+        {
+          "name": "Retail unit 1",
+          "x": 0,
+          "y": 5,
+          "w": 4,
+          "h": 9,
+          "kind": "guest"
+        },
+        {
+          "name": "Public gallery",
+          "x": 4,
+          "y": 5,
+          "w": 1.8,
+          "h": 9,
+          "kind": "corridor"
+        },
+        {
+          "name": "Retail unit 2",
+          "x": 5.8,
+          "y": 5,
+          "w": 4.2,
+          "h": 9,
+          "kind": "guest"
+        },
+        {
+          "name": "S2 stair",
+          "x": 0,
+          "y": 14,
+          "w": 4,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Rear lobby / pantry",
+          "x": 4,
+          "y": 14,
+          "w": 3,
+          "h": 4.5,
+          "kind": "corridor"
+        },
+        {
+          "name": "Stock / loading",
+          "x": 7,
+          "y": 14,
+          "w": 3,
+          "h": 4.5,
+          "kind": "service"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "entries": [
+        [
+          5.3,
+          0,
+          "h",
+          1.5
+        ],
+        [
+          1.5,
+          18.5,
+          "h",
+          1.2
+        ],
+        [
+          10,
+          16,
+          "v",
+          1.2
+        ]
+      ],
+      "windows": [
+        [
+          0,
+          6,
+          0,
+          12
+        ],
+        [
+          10,
+          6,
+          10,
+          12
+        ]
+      ]
+    },
+    "A201_FF": {
+      "key": "A201_FF",
+      "title": "Cowork first floor",
+      "w": 10,
+      "h": 18.5,
+      "rooms": [
+        {
+          "name": "S1 stair",
+          "x": 0,
+          "y": 0,
+          "w": 4,
+          "h": 5,
+          "kind": "core"
+        },
+        {
+          "name": "Lift / lobby",
+          "x": 4,
+          "y": 0,
+          "w": 3,
+          "h": 5,
+          "kind": "core"
+        },
+        {
+          "name": "Guest WCs",
+          "x": 7,
+          "y": 0,
+          "w": 3,
+          "h": 5,
+          "kind": "wet"
+        },
+        {
+          "name": "Hot desks 8 positions",
+          "x": 0,
+          "y": 5,
+          "w": 4,
+          "h": 9,
+          "kind": "guest"
+        },
+        {
+          "name": "Public gallery",
+          "x": 4,
+          "y": 5,
+          "w": 1.8,
+          "h": 9,
+          "kind": "corridor"
+        },
+        {
+          "name": "Meeting / quiet rooms",
+          "x": 5.8,
+          "y": 5,
+          "w": 4.2,
+          "h": 9,
+          "kind": "guest"
+        },
+        {
+          "name": "S2 stair",
+          "x": 0,
+          "y": 14,
+          "w": 4,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Rear lobby / pantry",
+          "x": 4,
+          "y": 14,
+          "w": 3,
+          "h": 4.5,
+          "kind": "corridor"
+        },
+        {
+          "name": "Team office",
+          "x": 7,
+          "y": 14,
+          "w": 3,
+          "h": 4.5,
+          "kind": "guest"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "entries": [],
+      "windows": [
+        [
+          0,
+          6,
+          0,
+          12
+        ],
+        [
+          10,
+          6,
+          10,
+          12
+        ]
+      ]
+    },
+    "A202_RF": {
+      "key": "A202_RF",
+      "title": "Cowork rooftop",
+      "w": 10,
+      "h": 18.5,
+      "rooms": [
+        {
+          "name": "S1 stair",
+          "x": 0,
+          "y": 0,
+          "w": 4,
+          "h": 5,
+          "kind": "core"
+        },
+        {
+          "name": "Lift / lobby",
+          "x": 4,
+          "y": 0,
+          "w": 3,
+          "h": 5,
+          "kind": "core"
+        },
+        {
+          "name": "Guest WCs",
+          "x": 7,
+          "y": 0,
+          "w": 3,
+          "h": 5,
+          "kind": "wet"
+        },
+        {
+          "name": "Open roof lounge",
+          "x": 0,
+          "y": 5,
+          "w": 4,
+          "h": 9,
+          "kind": "outdoor"
+        },
+        {
+          "name": "Roof circulation",
+          "x": 4,
+          "y": 5,
+          "w": 1.8,
+          "h": 9,
+          "kind": "outdoor"
+        },
+        {
+          "name": "Shade / event terrace",
+          "x": 5.8,
+          "y": 5,
+          "w": 4.2,
+          "h": 9,
+          "kind": "outdoor"
+        },
+        {
+          "name": "S2 stair",
+          "x": 0,
+          "y": 14,
+          "w": 4,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Rear lobby / pantry",
+          "x": 4,
+          "y": 14,
+          "w": 3,
+          "h": 4.5,
+          "kind": "corridor"
+        },
+        {
+          "name": "Plant reserve",
+          "x": 7,
+          "y": 14,
+          "w": 3,
+          "h": 4.5,
+          "kind": "service"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "entries": [],
+      "windows": []
+    },
+    "A301_GF": {
+      "key": "A301_GF",
+      "title": "Gym ground floor",
+      "w": 11,
+      "h": 17,
+      "rooms": [
+        {
+          "name": "S1 stair",
+          "x": 0,
+          "y": 0,
+          "w": 4,
+          "h": 5,
+          "kind": "core"
+        },
+        {
+          "name": "Reception / lounge",
+          "x": 4,
+          "y": 0,
+          "w": 4,
+          "h": 5,
+          "kind": "guest"
+        },
+        {
+          "name": "Lift / lobby",
+          "x": 8,
+          "y": 0,
+          "w": 3,
+          "h": 5,
+          "kind": "core"
+        },
+        {
+          "name": "Strength / cardio",
+          "x": 0,
+          "y": 5,
+          "w": 9.2,
+          "h": 7.5,
+          "kind": "guest"
+        },
+        {
+          "name": "Clear gallery",
+          "x": 9.2,
+          "y": 5,
+          "w": 1.8,
+          "h": 7.5,
+          "kind": "corridor"
+        },
+        {
+          "name": "S2 stair",
+          "x": 0,
+          "y": 12.5,
+          "w": 4,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Coach / equipment",
+          "x": 4,
+          "y": 12.5,
+          "w": 4,
+          "h": 4.5,
+          "kind": "service"
+        },
+        {
+          "name": "WC / first aid",
+          "x": 8,
+          "y": 12.5,
+          "w": 3,
+          "h": 4.5,
+          "kind": "wet"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "entries": [
+        [
+          6,
+          0,
+          "h",
+          1.5
+        ],
+        [
+          2,
+          17,
+          "h",
+          1.2
+        ]
+      ],
+      "windows": [
+        [
+          11,
+          6,
+          11,
+          11
+        ],
+        [
+          0,
+          6,
+          0,
+          10
+        ]
+      ]
+    },
+    "A301_FF": {
+      "key": "A301_FF",
+      "title": "Gym first floor",
+      "w": 11,
+      "h": 17,
+      "rooms": [
+        {
+          "name": "S1 stair",
+          "x": 0,
+          "y": 0,
+          "w": 4,
+          "h": 5,
+          "kind": "core"
+        },
+        {
+          "name": "Upper lounge",
+          "x": 4,
+          "y": 0,
+          "w": 4,
+          "h": 5,
+          "kind": "guest"
+        },
+        {
+          "name": "Lift / lobby",
+          "x": 8,
+          "y": 0,
+          "w": 3,
+          "h": 5,
+          "kind": "core"
+        },
+        {
+          "name": "Studio / mobility",
+          "x": 0,
+          "y": 5,
+          "w": 9.2,
+          "h": 7.5,
+          "kind": "guest"
+        },
+        {
+          "name": "Clear gallery",
+          "x": 9.2,
+          "y": 5,
+          "w": 1.8,
+          "h": 7.5,
+          "kind": "corridor"
+        },
+        {
+          "name": "S2 stair",
+          "x": 0,
+          "y": 12.5,
+          "w": 4,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Consult / store",
+          "x": 4,
+          "y": 12.5,
+          "w": 4,
+          "h": 4.5,
+          "kind": "service"
+        },
+        {
+          "name": "WC / first aid",
+          "x": 8,
+          "y": 12.5,
+          "w": 3,
+          "h": 4.5,
+          "kind": "wet"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "entries": [],
+      "windows": [
+        [
+          11,
+          6,
+          11,
+          11
+        ],
+        [
+          0,
+          6,
+          0,
+          10
+        ]
+      ]
+    },
+    "A302_GF": {
+      "key": "A302_GF",
+      "title": "Spa ground floor",
+      "w": 11.75,
+      "h": 16,
+      "rooms": [
+        {
+          "name": "S1 stair",
+          "x": 0,
+          "y": 0,
+          "w": 4,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Reception / tea",
+          "x": 4,
+          "y": 0,
+          "w": 4.75,
+          "h": 4.5,
+          "kind": "guest"
+        },
+        {
+          "name": "Lift / lobby",
+          "x": 8.75,
+          "y": 0,
+          "w": 3,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Treatment 1",
+          "x": 0,
+          "y": 4.5,
+          "w": 4.5,
+          "h": 3.5,
+          "kind": "wet"
+        },
+        {
+          "name": "Treatment 2",
+          "x": 0,
+          "y": 8,
+          "w": 4.5,
+          "h": 3.5,
+          "kind": "wet"
+        },
+        {
+          "name": "Quiet gallery",
+          "x": 4.5,
+          "y": 4.5,
+          "w": 1.8,
+          "h": 7,
+          "kind": "corridor"
+        },
+        {
+          "name": "Recovery lounge",
+          "x": 6.3,
+          "y": 4.5,
+          "w": 5.45,
+          "h": 3.5,
+          "kind": "guest"
+        },
+        {
+          "name": "Consult / treatment",
+          "x": 6.3,
+          "y": 8,
+          "w": 5.45,
+          "h": 3.5,
+          "kind": "wet"
+        },
+        {
+          "name": "S2 stair",
+          "x": 0,
+          "y": 11.5,
+          "w": 4,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Rear lobby / linen",
+          "x": 4,
+          "y": 11.5,
+          "w": 3.75,
+          "h": 4.5,
+          "kind": "corridor"
+        },
+        {
+          "name": "WCs / wet prep",
+          "x": 7.75,
+          "y": 11.5,
+          "w": 4,
+          "h": 4.5,
+          "kind": "wet"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "entries": [
+        [
+          6.5,
+          0,
+          "h",
+          1.5
+        ],
+        [
+          2,
+          16,
+          "h",
+          1.2
+        ],
+        [
+          11.75,
+          14,
+          "v",
+          1.0
+        ]
+      ],
+      "windows": [
+        [
+          0,
+          5,
+          0,
+          7
+        ],
+        [
+          11.75,
+          5,
+          11.75,
+          7
+        ]
+      ]
+    },
+    "A302_FF": {
+      "key": "A302_FF",
+      "title": "Spa first floor",
+      "w": 11.75,
+      "h": 16,
+      "rooms": [
+        {
+          "name": "S1 stair",
+          "x": 0,
+          "y": 0,
+          "w": 4,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Upper relaxation",
+          "x": 4,
+          "y": 0,
+          "w": 4.75,
+          "h": 4.5,
+          "kind": "guest"
+        },
+        {
+          "name": "Lift / lobby",
+          "x": 8.75,
+          "y": 0,
+          "w": 3,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Treatment 3",
+          "x": 0,
+          "y": 4.5,
+          "w": 4.5,
+          "h": 3.5,
+          "kind": "wet"
+        },
+        {
+          "name": "Treatment 4",
+          "x": 0,
+          "y": 8,
+          "w": 4.5,
+          "h": 3.5,
+          "kind": "wet"
+        },
+        {
+          "name": "Quiet gallery",
+          "x": 4.5,
+          "y": 4.5,
+          "w": 1.8,
+          "h": 7,
+          "kind": "corridor"
+        },
+        {
+          "name": "Couples treatment",
+          "x": 6.3,
+          "y": 4.5,
+          "w": 5.45,
+          "h": 3.5,
+          "kind": "guest"
+        },
+        {
+          "name": "Quiet recovery",
+          "x": 6.3,
+          "y": 8,
+          "w": 5.45,
+          "h": 3.5,
+          "kind": "wet"
+        },
+        {
+          "name": "S2 stair",
+          "x": 0,
+          "y": 11.5,
+          "w": 4,
+          "h": 4.5,
+          "kind": "core"
+        },
+        {
+          "name": "Rear lobby / linen",
+          "x": 4,
+          "y": 11.5,
+          "w": 3.75,
+          "h": 4.5,
+          "kind": "corridor"
+        },
+        {
+          "name": "WCs / wet prep",
+          "x": 7.75,
+          "y": 11.5,
+          "w": 4,
+          "h": 4.5,
+          "kind": "wet"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "entries": [],
+      "windows": [
+        [
+          0,
+          5,
+          0,
+          7
+        ],
+        [
+          11.75,
+          5,
+          11.75,
+          7
+        ]
+      ]
+    },
+    "A303_GF": {
+      "key": "A303_GF",
+      "title": "Shared changing amenities",
+      "w": 12,
+      "h": 8,
+      "rooms": [
+        {
+          "name": "Dry arrival / circulation",
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 2,
+          "kind": "corridor"
+        },
+        {
+          "name": "Change A",
+          "x": 0,
+          "y": 2,
+          "w": 4.5,
+          "h": 6,
+          "kind": "wet"
+        },
+        {
+          "name": "Change B",
+          "x": 4.5,
+          "y": 2,
+          "w": 4.5,
+          "h": 6,
+          "kind": "wet"
+        },
+        {
+          "name": "Family / accessible change",
+          "x": 9,
+          "y": 2,
+          "w": 3,
+          "h": 4,
+          "kind": "wet"
+        },
+        {
+          "name": "Linen / cleaner",
+          "x": 9,
+          "y": 6,
+          "w": 3,
+          "h": 2,
+          "kind": "service"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "entries": [
+        [
+          1.5,
+          0,
+          "h",
+          1.5
+        ],
+        [
+          10.5,
+          0,
+          "h",
+          1.5
+        ],
+        [
+          12,
+          7,
+          "v",
+          0.9
+        ]
+      ],
+      "windows": []
+    },
+    "A004_GF": {
+      "key": "A004_GF",
+      "title": "Arrival reception",
+      "w": 12,
+      "h": 10,
+      "rooms": [
+        {
+          "name": "Arrival lounge",
+          "x": 0,
+          "y": 0,
+          "w": 8,
+          "h": 6,
+          "kind": "guest"
+        },
+        {
+          "name": "Reception desk",
+          "x": 8,
+          "y": 0,
+          "w": 4,
+          "h": 3,
+          "kind": "guest"
+        },
+        {
+          "name": "Admin / security",
+          "x": 8,
+          "y": 3,
+          "w": 4,
+          "h": 3,
+          "kind": "service"
+        },
+        {
+          "name": "Controlled club entry",
+          "x": 0,
+          "y": 6,
+          "w": 4,
+          "h": 4,
+          "kind": "corridor"
+        },
+        {
+          "name": "Public WC lobby",
+          "x": 4,
+          "y": 6,
+          "w": 4,
+          "h": 4,
+          "kind": "corridor"
+        },
+        {
+          "name": "Guest WCs",
+          "x": 8,
+          "y": 6,
+          "w": 4,
+          "h": 4,
+          "kind": "wet"
+        }
+      ],
+      "links": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "entries": [
+        [
+          4,
+          0,
+          "h",
+          2
+        ],
+        [
+          2,
+          10,
+          "h",
+          2
+        ],
+        [
+          12,
+          4.5,
+          "v",
+          1.0
+        ]
+      ],
+      "windows": []
+    },
+    "V101_A": {
+      "key": "V101_A",
+      "title": "Studio A",
+      "w": 8,
+      "h": 8,
+      "rooms": [
+        {
+          "name": "Entry",
+          "x": 0,
+          "y": 0,
+          "w": 2.5,
+          "h": 3,
+          "kind": "guest"
+        },
+        {
+          "name": "Bathroom",
+          "x": 2.5,
+          "y": 0,
+          "w": 3,
+          "h": 3,
+          "kind": "wet"
+        },
+        {
+          "name": "Pantry / wardrobe",
+          "x": 5.5,
+          "y": 0,
+          "w": 2.5,
+          "h": 3,
+          "kind": "service"
+        },
+        {
+          "name": "Studio living / sleeping",
+          "x": 0,
+          "y": 3,
+          "w": 8,
+          "h": 5,
+          "kind": "guest"
+        }
+      ],
+      "links": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "entries": [
+        [
+          1.2,
+          0,
+          "h",
+          1.1
+        ],
+        [
+          4.0,
+          8,
+          "h",
+          2
+        ]
+      ],
+      "windows": [
+        [
+          1,
+          8,
+          7,
+          8
+        ]
+      ]
+    },
+    "V101_B": {
+      "key": "V101_B",
+      "title": "Studio B",
+      "w": 10,
+      "h": 8,
+      "rooms": [
+        {
+          "name": "Entry",
+          "x": 0,
+          "y": 0,
+          "w": 3,
+          "h": 3.2,
+          "kind": "guest"
+        },
+        {
+          "name": "Bathroom",
+          "x": 3,
+          "y": 0,
+          "w": 3.5,
+          "h": 3.2,
+          "kind": "wet"
+        },
+        {
+          "name": "Pantry / wardrobe",
+          "x": 6.5,
+          "y": 0,
+          "w": 3.5,
+          "h": 3.2,
+          "kind": "service"
+        },
+        {
+          "name": "Studio living / sleeping",
+          "x": 0,
+          "y": 3.2,
+          "w": 10,
+          "h": 4.8,
+          "kind": "guest"
+        }
+      ],
+      "links": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "entries": [
+        [
+          1.2,
+          0,
+          "h",
+          1.1
+        ],
+        [
+          5.0,
+          8,
+          "h",
+          2
+        ]
+      ],
+      "windows": [
+        [
+          1,
+          8,
+          9,
+          8
+        ]
+      ]
+    },
+    "V101_C": {
+      "key": "V101_C",
+      "title": "Studio C",
+      "w": 12,
+      "h": 8,
+      "rooms": [
+        {
+          "name": "Entry",
+          "x": 0,
+          "y": 0,
+          "w": 3,
+          "h": 3,
+          "kind": "guest"
+        },
+        {
+          "name": "Bathroom",
+          "x": 3,
+          "y": 0,
+          "w": 3.5,
+          "h": 3,
+          "kind": "wet"
+        },
+        {
+          "name": "Wardrobe",
+          "x": 6.5,
+          "y": 0,
+          "w": 2.5,
+          "h": 3,
+          "kind": "service"
+        },
+        {
+          "name": "Pantry",
+          "x": 9,
+          "y": 0,
+          "w": 3,
+          "h": 3,
+          "kind": "service"
+        },
+        {
+          "name": "Studio living / sleeping",
+          "x": 0,
+          "y": 3,
+          "w": 8,
+          "h": 5,
+          "kind": "guest"
+        },
+        {
+          "name": "Private lounge",
+          "x": 8,
+          "y": 3,
+          "w": 4,
+          "h": 5,
+          "kind": "guest"
+        }
+      ],
+      "links": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "entries": [
+        [
+          1.2,
+          0,
+          "h",
+          1.1
+        ],
+        [
+          6.0,
+          8,
+          "h",
+          2
+        ]
+      ],
+      "windows": [
+        [
+          1,
+          8,
+          7,
+          8
+        ],
+        [
+          9,
+          8,
+          11,
+          8
+        ]
+      ]
+    }
+  },
+  "pages": [
+    [
+      "A000",
+      "2D concept design package"
+    ],
+    [
+      "A001",
+      "Reference site and source hierarchy"
+    ],
+    [
+      "A002",
+      "Proposed site zoning map"
+    ],
+    [
+      "A003",
+      "Day Club spatial arrangement"
+    ],
+    [
+      "A004",
+      "Arrival parking and reception"
+    ],
+    [
+      "A101",
+      "Restaurant floor plans"
+    ],
+    [
+      "A102",
+      "Restaurant roof and concept section"
+    ],
+    [
+      "A201",
+      "Cowork and retail floor plans"
+    ],
+    [
+      "A202",
+      "Cowork rooftop and elevation study"
+    ],
+    [
+      "A301",
+      "Fitness and gym floor plans"
+    ],
+    [
+      "A302",
+      "Spa and recovery floor plans"
+    ],
+    [
+      "A303",
+      "Shared changing and wellness section"
+    ],
+    [
+      "L101",
+      "Pool court and plaza plan"
+    ],
+    [
+      "L102",
+      "Amphitheatre and children\u2019s garden"
+    ],
+    [
+      "L103",
+      "Adventure precinct planning"
+    ],
+    [
+      "V101",
+      "Three studio villa typologies"
+    ],
+    [
+      "V102",
+      "Studio villa cluster and plotting study"
+    ],
+    [
+      "S001",
+      "Structural grid and envelope studies"
+    ],
+    [
+      "M001",
+      "Landscape and building services strategy"
+    ],
+    [
+      "A901",
+      "Area reconciliation and document completion"
+    ]
+  ],
+  "core": [
+    [
+      "Restaurant",
+      0,
+      0,
+      15,
+      19,
+      "#EEE1CB"
+    ],
+    [
+      "Spa",
+      0,
+      28,
+      11.75,
+      16,
+      "#F7F5ED"
+    ],
+    [
+      "Gym",
+      0,
+      50,
+      11,
+      17,
+      "#F7F5ED"
+    ],
+    [
+      "Changing",
+      15,
+      45,
+      12,
+      8,
+      "#CAE3E9"
+    ],
+    [
+      "Pool plant",
+      30,
+      45,
+      6,
+      4,
+      "#F0F1EF"
+    ],
+    [
+      "Pool + plaza",
+      22,
+      16,
+      26,
+      25,
+      "#CAE3E9"
+    ],
+    [
+      "Reception",
+      39,
+      0,
+      12,
+      10,
+      "#EEE1CB"
+    ],
+    [
+      "Cowork / retail",
+      54,
+      18,
+      10,
+      18.5,
+      "#F7F5ED"
+    ],
+    [
+      "Amphitheatre",
+      68,
+      20,
+      26,
+      13,
+      "#DCE8D9"
+    ],
+    [
+      "Kids",
+      57,
+      0,
+      15.8,
+      15,
+      "#DCE8D9"
+    ]
+  ],
+  "guest_segments": [
+    [
+      [
+        18.5,
+        12
+      ],
+      [
+        52,
+        12
+      ]
+    ],
+    [
+      [
+        19.5,
+        9
+      ],
+      [
+        19.5,
+        42.7
+      ]
+    ],
+    [
+      [
+        13.5,
+        26
+      ],
+      [
+        13.5,
+        65
+      ]
+    ],
+    [
+      [
+        51,
+        12
+      ],
+      [
+        51,
+        42.7
+      ]
+    ],
+    [
+      [
+        13.5,
+        42.7
+      ],
+      [
+        64,
+        42.7
+      ]
+    ],
+    [
+      [
+        13.5,
+        26
+      ],
+      [
+        6.5,
+        26
+      ]
+    ],
+    [
+      [
+        6.5,
+        26
+      ],
+      [
+        6.5,
+        28
+      ]
+    ],
+    [
+      [
+        13.5,
+        48
+      ],
+      [
+        6,
+        48
+      ]
+    ],
+    [
+      [
+        6,
+        48
+      ],
+      [
+        6,
+        50
+      ]
+    ],
+    [
+      [
+        19.5,
+        9
+      ],
+      [
+        15,
+        9
+      ]
+    ],
+    [
+      [
+        16.5,
+        42.7
+      ],
+      [
+        16.5,
+        45
+      ]
+    ],
+    [
+      [
+        51,
+        16.5
+      ],
+      [
+        59.3,
+        16.5
+      ]
+    ],
+    [
+      [
+        59.3,
+        16.5
+      ],
+      [
+        59.3,
+        18
+      ]
+    ],
+    [
+      [
+        59.3,
+        16.5
+      ],
+      [
+        66.5,
+        16.5
+      ]
+    ],
+    [
+      [
+        66.5,
+        16.5
+      ],
+      [
+        66.5,
+        25
+      ]
+    ],
+    [
+      [
+        66.5,
+        25
+      ],
+      [
+        68,
+        25
+      ]
+    ]
+  ]
+}
