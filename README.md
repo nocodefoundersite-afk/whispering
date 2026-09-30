@@ -1,38 +1,44 @@
-# Whispering Wood — Interactive 3D Resort
+# Whispering Wood — master plan in 3D
 
-R02 is a reference-based architectural concept for the Day Club and surrounding resort. Rotate and zoom the model, select buildings, reveal floors, inspect room schedules, switch to top/whole-site view, hide planting, isolate buildings and download views.
+R03 reconstructs the uploaded **25 August landscape master plan**. It replaces the earlier mixed-reference site arrangement.
 
-## Deploy on Netlify
+## Netlify
 
-1. Import this GitHub repository into Netlify.
-2. Netlify reads `netlify.toml` automatically: **build command `npm run build`**, **publish directory `dist`**, **Node 22**.
-3. Deploy. No environment variables, database, API key or paid 3D service is required.
+Import this GitHub repository, deploy branch `main`.
 
-This is a static React + Vite + Three.js application. Hosting access controls are your choice. It does not depend on ChatGPT sign-in or Cloudflare Workers.
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Node: 22
+- No environment variables or API keys required.
 
-## Run locally
+These settings and the single-page redirect are included in `netlify.toml`.
 
-```sh
+## Local development
+
+```bash
 npm ci
 npm run dev
-```
-
-```sh
 npm run build
 npm run preview
 ```
 
-## Design basis
+## Review the layout
 
-See [docs/model-basis.md](docs/model-basis.md) for source priorities, changed areas and model limitations. Restaurant: **288 m²**; kids' garden: **227 m²**, following the KLS proposal. Positions and levels remain image-based concept assumptions pending CAD survey coordination.
+Use **Plan check** to see the reconstructed footprints over the original drawing; **Original 2D** shows the drawing alone. The viewer includes a guided walkthrough, roof removal, building selection, PNG view export and GLB model export.
 
-The uploaded architectural and survey reference images are included for design review. The model uses WebGL where available and a software fallback otherwise. The software mode omits physical reflections and shadows.
+The horizontal layout is traced from the source image. Building heights, roof profiles, finishes and unresolved internal details remain illustrative. This is not a measured CAD or construction model. See [the source analysis and assumptions](docs/model-basis.md).
 
-## Source map
+## Source files
 
-- `app/page.tsx`: viewer interface and controls
-- `lib/project.ts`: programme, building locations and area schedule
-- `lib/design-data.json`: preliminary room plans
-- `lib/scene.ts`: 3D buildings, cutaways, selection and camera
-- `lib/site-landscape.ts`: terrain, pools, roofs, paths, plants and amenities
-- `lib/software-renderer.ts`: no-WebGL fallback
+- `lib/map-data.ts`: source coordinates, footprint polygons, paths and source registration
+- `lib/map-model.ts`: geometry, materials, furniture and planting
+- `lib/scene.ts`: cameras, controls, walkthrough and exports
+- `lib/software-renderer.ts`: textured CPU fallback for browsers without WebGL
+- `app/page.tsx`: client review interface
+- `public/references/master-plan.webp`: supplied controlling plan
+
+Run the footprint audit with:
+
+```bash
+node --experimental-strip-types scripts/check-trace.mjs
+```

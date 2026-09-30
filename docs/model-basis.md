@@ -1,53 +1,48 @@
-# Whispering Wood — R02 reference-based 3D study
+# Whispering Wood — master-plan reconstruction R03
 
-R02 rebuilds the first simplified model following the user's uploaded references. It is an image-based architectural concept, not a measured reconstruction or a construction package.
+## Controlling source
 
-## Reference hierarchy
+The user-uploaded `MASTER PLAN WITH LANDSCAPE 25TH AUG_page-0001(2).jpg` (2048 × 1448) is the controlling plan for R03. `image(2).png` shows the same arrangement. The 10 October survey and earlier architectural aerial are **not** mixed into this revision. The earlier R02 arrangement is superseded.
 
-1. The surveyed plan superimposed on the master plan, dated 10 October 2025: irregular main parcel west of the access road; parking and nursery on the northern eastern extension; reception at the eastern edge; clubhouse below the main pool; accommodation to the west and north; detached staff/utility court to the south.
-2. `00(1).png`: steep grey pitched and A-frame forms, glass and timber, white/stone walls, several pools, planted islands, basalt retaining walls, terraced lawns and curved stone paths.
-3. The KLS proposal image: restaurant, gym, spa, coworking, shared amenities, amphitheatre and children's garden programme.
-4. The August landscape master plan: extended adventure and landscape functions. Its different orientation and layout are not superimposed as if identical to the surveyed plan.
-5. The two clear-site-plan PNGs are supporting visual explanations, not independent surveys.
+A readable WebP copy of the source is bundled at `public/references/master-plan.webp`. Coordinates are traced in a 1888 × 1334 image space. Every footprint, path and reference-plane placement uses the same `world()` transform in `lib/map-data.ts`. Display scaling is 0.18 model units per image pixel, approximately consistent with the court annotations; it is not a surveyed scale.
 
-These sources depict different versions. Their design language and programme are reconciled in R02; exact matches in position, scale and level are not claimed.
+## Image analysis and retained relationships
 
-## Revisions
+| Drawing region | Visible elements retained |
+|---|---|
+| Upper left | Four-wheeler parking, long outer row, central double row, short western row |
+| Above the road, centre-left | Two distinct pavilion outlines, including their stepped edges |
+| Upper centre-right | Paintball field, surrounding ATV circuit and serpentine eastern turn |
+| Within the sports circuit | Yoga, sauna, changing blocks, gym, equipment room, garden axis, arrival lounge, extra space, one padel court and two pickleball courts |
+| Far right | Long activity/dining block and separate annex; small unreadable room names remain unconfirmed |
+| Main east–west road | Original kink and eastern curve; landscape edges retained |
+| Day Club arrival | Semicircular vehicle court, planted island, small reception and western waiting/kiosk pavilion |
+| Upper Day Club loop | Club house and restaurant at upper right, stepped kitchen/service group, two SPA rooms, open kitchen apron |
+| Main pool area | Freeform pool, internal round features, curved bridge/counter, poolside furniture, four yellow tensile canopies on the left |
+| Lower pool area | Long pool with notched accommodation bays, four detached pool villas, five western/northern poolside suite volumes |
+| Radial cluster | Angular courtyard pool, eight visible wing outlines; wing count is not claimed as a confirmed room count |
+| Garden enclave | Three pavilion footprints, branching orange paths, sculpted lawn, small circular basins, southern paved terrace |
+| Lower accommodation | Paired room block with central passage; three separate paired studio footprints below it |
 
-- Irregular site massing replaces the rectangular model base.
-- Three concept terraces at +0.50, +2.60 and +4.80 m, with curved retaining walls, broad stairs and planted borders. These levels are design assumptions, not surveyed elevations.
-- Grey gabled, hipped and pyramidal roofs; four steep-roofed Bali pavilions; three roof sections at the restaurant.
-- Freeform main pool with planted island, two raised spa basins, a rectangular lap pool and an elevated Bali pool. Hollow coping rings keep the water visible. Turquoise depth colour, lighter edges and restrained ripple highlights replace the washed-out water.
-- Eight studio units in staggered upper clusters, four Bali pavilions, four lower garden cottages and a separate western courtyard accommodation block. Counts are provisional interpretations.
-- Curved guest circulation, an outer western service lane and an eastern vehicle road with arrival court. Nursery, shed, northern parking, adventure routes and detached staff/utility court are represented.
-- Layered shrubs, hedges, palms, border planting and lawn terraces.
-- Three viewing modes: 3D core view, top view and whole-site view. Selection, orbit, zoom, floor cutaways, room schedules, isolation, labels, planting switch and PNG export are retained.
-- Rotated/elevated buildings use transformed camera targets, room labels and selection outlines.
+The broad curves, individual footprints and relative positions are reconstructed from the visible raster. Tiny furniture marks, doors, sanitary details, plant symbols and faint service annotations cannot all be resolved at survey accuracy from this image. Internal furniture and some partitions remain indicative. The model does not claim line-by-line CAD equivalence.
 
-## Area reconciliation
+## Elevation and material assumptions
 
-| Space | R02 working area | Basis |
-|---|---:|---|
-| Restaurant footprint | 288 m² | KLS proposal; earlier brief 285 m² |
-| Gym footprint | 187 m² | Brief and proposal |
-| Spa footprint | 188 m² | Brief and proposal |
-| Coworking / retail footprint | 185 m² | Brief and proposal |
-| Core pool and plaza | 650 m² allocation | Combined programme, not water surface alone |
-| Amphitheatre | 338 m² allocation | Brief and proposal |
-| Children's garden | 227 m² | KLS proposal; earlier brief 237 m² |
+- No terrain levels or building elevations are supplied on this sheet. All plan surfaces use one ground datum; small raised surface offsets only prevent rendering conflicts.
+- Building heights of roughly 3–4.2 display metres, low roof forms, glazing, columns and finishes are illustrative. Floor counts from older programme versions do not override this map.
+- Yellow canopies, aqua pools, grey road/paving, green gardens, blue/green sports courts and warm garden paths reproduce the visible palette as materials. CAD magenta/cyan annotation strokes are not assumed to be exterior paint colours.
+- These are presentation meshes, not engineered foundations, pool shells, retaining walls or a construction/BIM issue.
 
-The restaurant's preliminary room cells, openings and entries are rescaled from 15 × 19 m to 16 × 18 m. Other interiors retain the preliminary room studies. Additional lap/Bali pools are reference-led additions with provisional areas, outside the core 650 m² allocation. Support structures and parking are illustrative.
+## Viewer and verification
 
-## Coordination still required
+- **3D model:** complete map arrangement, orbit, zoom, building selection and roof removal.
+- **Plan check:** orthographic projection over the source image using the same image coordinates; site fills and planting hide so the drawing remains visible.
+- **Original 2D:** source sheet alone in the same scene coordinates.
+- **Walkthrough:** guided camera route along the Day Club paths. Dragging stops movement; Stop tour returns to the overview.
+- **PNG export:** current view with a revision / assumption caption.
+- **GLB export:** the actual 3D geometry, textures and materials, with the reference sheet and selection outline excluded.
+- View URLs retain building, cutaway and comparison mode.
 
-Native CAD survey, reliable dimensions, contours and spot levels are needed before exact boundary/position/elevation alignment. Roof geometry and rooms require architectural coordination; drainage, structures, services, access gradients, clearances, setbacks and statutory compliance are not resolved by this visual model. No capacity, engineering sizing or construction readiness is asserted.
+`node --experimental-strip-types scripts/check-trace.mjs` checks coordinate round trips, unique IDs, outline self-intersections and meaningful building/building or building/pool intersections. The production command is `npm run build`.
 
-## Rendering and validation
-
-The viewer uses actual Three.js mesh geometry. A CPU depth-buffer renderer displays the same geometry when WebGL is unavailable, including vertex water colours and floor cutaways; cast shadows and physical reflections require WebGL. The review browser disables WebGL, so browser visual checks cover the CPU path. No GPU visual equivalence is claimed.
-
-TypeScript checking passed. Restaurant ground, first and roof planning zones each total 288 m². A rotated-footprint intersection check found no overlapping building envelopes after the villa adjustment. Browser checks confirmed the restaurant ground/roof controls, URL floor restoration, rotated villa cutaways, isolation and full-site navigation. PNG download automation was not confirmed; the viewer retains its existing export implementation.
-
-## Access
-
-This portable build contains no application login. The Netlify site owner controls publication and any hosting access restrictions. The view link preserves the selected building and floor.
+WebGL uses physical materials, texture maps, environment illumination and cast shadows. A CPU fallback retains geometry, camera navigation, perspective-correct texture mapping and projected soft shadows; physical reflections require WebGL. Browser QA in this environment uses that fallback because WebGL is disabled.

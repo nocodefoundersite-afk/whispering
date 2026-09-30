@@ -1,0 +1,11 @@
+import {features,world,SOURCE} from '../lib/map-data.ts';
+import {ShapeUtils,Vector2} from 'three';
+const cross=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);
+const area=p=>Math.abs(p.reduce((n,a,i)=>{const b=p[(i+1)%p.length];return n+a[0]*b[1]-b[0]*a[1];},0)/2);
+function clip(subject,polygon){let result=subject;for(let i=0;i<polygon.length;i++){const a=polygon[i],b=polygon[(i+1)%polygon.length],old=result;result=[];for(let j=0;j<old.length;j++){const p=old[j],q=old[(j+1)%old.length],cp=cross(a,b,p),cq=cross(a,b,q);if(cp>=-1e-7)result.push(p);if((cp>0&&cq<0)||(cp<0&&cq>0)){const t=cp/(cp-cq);result.push([p[0]+(q[0]-p[0])*t,p[1]+(q[1]-p[1])*t]);}}}return result;}
+function triangles(p){return ShapeUtils.triangulateShape(p.map(q=>new Vector2(...q)),[]).map(t=>{const a=t.map(i=>p[i]);return cross(...a)<0?a.reverse():a;});}
+const bad=[],overlaps=[],ids=new Set();
+for(const f of features){if(ids.has(f.id))bad.push(`${f.id}: duplicate ID`);ids.add(f.id);for(const p of f.points){if(!p.every(Number.isFinite))bad.push(`${f.id}: non-finite coordinate`);const q=world(p),back=[q[0]/SOURCE.scale+SOURCE.origin[0],q[1]/SOURCE.scale+SOURCE.origin[1]];if(Math.hypot(p[0]-back[0],p[1]-back[1])>1e-8)bad.push('Coordinate registration failed');}for(let i=0;i<f.points.length;i++)for(let j=i+2;j<f.points.length;j++){if(i===0&&j===f.points.length-1)continue;const a=f.points[i],b=f.points[(i+1)%f.points.length],c=f.points[j],d=f.points[(j+1)%f.points.length];if(cross(a,b,c)*cross(a,b,d)<-1e-7&&cross(c,d,a)*cross(c,d,b)<-1e-7)bad.push(`${f.id}: self-intersecting outline`);}if(area(f.points)<1)bad.push(`${f.id}: zero area`);}
+const targets=features.filter(f=>f.kind==='building'||f.kind==='pool');
+for(let i=0;i<targets.length;i++)for(let j=i+1;j<targets.length;j++){const a=targets[i],b=targets[j];if(a.kind==='pool'&&b.kind==='pool')continue;let intersection=0;for(const ta of triangles(a.points))for(const tb of triangles(b.points))intersection+=area(clip(ta,tb));if(intersection>8)overlaps.push([a.id,b.id,Math.round(intersection*100)/100]);}
+console.log(JSON.stringify({features:features.length,invalid:bad,overlapsPx2:overlaps},null,2));if(bad.length||overlaps.length)process.exitCode=1;
